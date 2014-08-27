@@ -1,0 +1,8 @@
+deploy:
+  provider: s3
+  access_key_id: "AKIAIA6KYSAYOTUGEASA"
+  secret_access_key: “uJ7KawKFr0hutC5ruNA0vluwwC5H4XsPm36p9VG1"
+  bucket: "codefresh-bucket"
+  skip_cleanup: true
+  endpoint: "http://codefresh-bucket.s3-website-us-east-1.amazonaws.com/"
+  region: "us-east-1"
