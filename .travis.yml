@@ -1,0 +1,11 @@
+deploy:
+  provider: s3
+  access_key_id: AKIAIA6KYSAYOTUGEASA
+  secret_access_key:
+    secure: bBHfJ71NStXdRJ38WCAVe/Z0PgafgcwKvFZ33fHIk1aOxjrmA5iLqgyad8pgSUxixOSBGraO3n0wIJ7Xifjt+bEBo2dS7RS/N2BBPSdkpW6abxI5uPp5PkEF4INe7UJDBSULF77d0zEN6FqZQHET6bkuefBhoWpj4Hm9SLAAZeU=
+  bucket: codefresh-bucket
+  local-dir: build
+  acl: !ruby/string:HighLine::String |-
+    cHJpdmF0ZQ==
+  on:
+    repo: verchol/testTravis
